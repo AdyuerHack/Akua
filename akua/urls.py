@@ -16,7 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from akua_tourist import views as akua_touristViews
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', akua_touristViews.home),
+    path('about', akua_touristViews.about),
 ]

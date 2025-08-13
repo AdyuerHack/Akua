@@ -1,22 +1,225 @@
+{% load static %}
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <script src="" async defer></script>
-    </body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akua - Tu Compañero de Viaje Inteligente</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>Akua</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#como-funciona">Cómo Funciona</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Tu Compañero de Viaje Inteligente</h1>
+                <p class="hero-description">
+                    Descubre el mundo con planes personalizados creados por IA. Akua transforma tus sueños de viaje en itinerarios perfectos adaptados a tu presupuesto, intereses y tiempo.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Planifica tu Viaje</button>
+                    <button class="btn btn-secondary">Ver Demo</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="{% static 'images/diverse-travelers-exploration.png' %}" alt="Viajeros explorando destinos increíbles">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="caracteristicas" class="features">
+        <div class="container">
+            <h2 class="section-title">¿Por qué elegir Akua?</h2>
+            <p class="section-subtitle">Revolucionamos la forma en que planificas tus aventuras</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>IA Personalizada</h3>
+                    <p>Nuestro algoritmo inteligente analiza tus preferencias para crear el itinerario perfecto solo para ti.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Optimización de Presupuesto</h3>
+                    <p>Maximiza tu experiencia de viaje mientras mantienes el control total de tus gastos.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🗺️</div>
+                    <h3>Rutas Inteligentes</h3>
+                    <p>Descubre rutas optimizadas que conectan los mejores destinos de manera eficiente.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Acceso 24/7</h3>
+                    <p>Tu itinerario siempre disponible en tu dispositivo, incluso sin conexión a internet.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🏨</div>
+                    <h3>Recomendaciones Locales</h3>
+                    <p>Encuentra los mejores restaurantes, hoteles y actividades recomendados por locales.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Planificación Rápida</h3>
+                    <p>Crea itinerarios completos en minutos, no en horas de investigación.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section id="como-funciona" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Cómo Funciona</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Cuéntanos tus Preferencias</h3>
+                    <p>Comparte tu presupuesto, intereses, duración del viaje y destinos deseados.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>IA Crea tu Itinerario</h3>
+                    <p>Nuestro algoritmo analiza miles de opciones para crear el plan perfecto para ti.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Personaliza y Ajusta</h3>
+                    <p>Revisa, modifica y personaliza cada detalle según tus necesidades específicas.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>¡Disfruta tu Aventura!</h3>
+                    <p>Viaja con confianza siguiendo tu itinerario optimizado y personalizado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonios" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Lo que Dicen Nuestros Viajeros</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Akua transformó completamente mi forma de viajar. El itinerario fue perfecto y me ahorró horas de planificación."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="{% static 'images/happy-female-traveler.png' %}" alt="María González">
+                        <div>
+                            <h4>María González</h4>
+                            <span>Viajera Frecuente</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"La optimización de presupuesto es increíble. Pude hacer más con menos dinero gracias a las recomendaciones de Akua."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="{% static 'images/happy-young-female-traveler.png' %}" alt="Carlos Ruiz">
+                        <div>
+                            <h4>Carlos Ruiz</h4>
+                            <span>Aventurero Digital</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>¿Listo para tu Próxima Aventura?</h2>
+            <p>Únete a miles de viajeros que ya confían en Akua para crear experiencias inolvidables.</p>
+            <button class="btn btn-primary btn-large">Comenzar Ahora</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Akua</h3>
+                    <p>Tu compañero de viaje inteligente para aventuras personalizadas.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="#caracteristicas">Características</a></li>
+                        <li><a href="#como-funciona">Cómo Funciona</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>info@akua.com</p>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Akua. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
 </html>
